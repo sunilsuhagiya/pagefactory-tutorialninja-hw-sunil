@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>TestNG:  Regression Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 12 14:24:33 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>45 seconds (45167 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>regression </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='demo.com.tutorialninja.testsuite.TopMenuPageTest.verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully()'><b>verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</b><br>Test class: demo.com.tutorialninja.testsuite.TopMenuPageTest<br/>
+<a href="#Output-1801704517" onClick='toggleBox("Output-1801704517", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1801704517" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1801704517">
+mouseHoverOnLaptopsAndNotebooksTab[[ChromeDriver: chrome on WINDOWS (487d44e81afd4a57cb9fa3302c6e0f69)] -> link text: Laptops & Notebooks]<br/>
+Select menu [[ChromeDriver: chrome on WINDOWS (487d44e81afd4a57cb9fa3302c6e0f69)] -> xpath: //nav[@id='menu']//ul/li[contains(@class, 'open')]/div/child::*]<br/>
+getLaptopsAndNotebooksText[[ChromeDriver: chrome on WINDOWS (487d44e81afd4a57cb9fa3302c6e0f69)] -> xpath: //h2[contains(text(),'Laptops & Notebooks')]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>demo.com.tutorialninja.testsuite.TopMenuPageTest@6eceb130</td></tr>
+<tr>
+<td title='demo.com.tutorialninja.testsuite.TopMenuPageTest.verifyUserShouldNavigateToComponentsPageSuccessfully()'><b>verifyUserShouldNavigateToComponentsPageSuccessfully</b><br>Test class: demo.com.tutorialninja.testsuite.TopMenuPageTest<br/>
+<a href="#Output-708926121" onClick='toggleBox("Output-708926121", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-708926121" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-708926121">
+mouseHoverToComponentsTab[[ChromeDriver: chrome on WINDOWS (03cdfd3754336f1e8c1c219e03eec0ed)] -> link text: Components]<br/>
+Select menu [[ChromeDriver: chrome on WINDOWS (03cdfd3754336f1e8c1c219e03eec0ed)] -> xpath: //nav[@id='menu']//ul/li[contains(@class, 'open')]/div/child::*]<br/>
+getComponentsText[[ChromeDriver: chrome on WINDOWS (03cdfd3754336f1e8c1c219e03eec0ed)] -> xpath: //h2[contains(text(),'Components')]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>demo.com.tutorialninja.testsuite.TopMenuPageTest@6eceb130</td></tr>
+<tr>
+<td title='demo.com.tutorialninja.testsuite.DesktopPageTest.verifyProductAddedToShoppingCartSuccessFully()'><b>verifyProductAddedToShoppingCartSuccessFully</b><br>Test class: demo.com.tutorialninja.testsuite.DesktopPageTest<br/>
+<a href="#Output-737756161" onClick='toggleBox("Output-737756161", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-737756161" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-737756161">
+Mouse Hover On Desktop[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> link text: Desktops]<br/>
+click On Show All Desktop[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> link text: Show All Desktops]<br/>
+Sort Name (A - Z) By Position NameAtoZ[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> xpath: //select[@id='input-sort']]<br/>
+Click On Product HPLP3065[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> link text: HP LP3065]<br/>
+Get HPLP3065Text From List[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> xpath: //h1[contains(text(),'HP LP3065')]]<br/>
+Select Delivery Date<br/>
+enter Quantity1[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> xpath: //input[@id='input-quantity']]<br/>
+Click On Add To Cart[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> xpath: //button[@id='button-cart']]<br/>
+verifyProductAddedToShoppingCartText[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> xpath: //div[@class='alert alert-success alert-dismissible']]<br/>
+clickOnShoppingCart[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> xpath: //span[contains(text(),'Shopping Cart')]]<br/>
+Verify Text ShoppingCart[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> xpath: //div[@id='content']//h1]<br/>
+VerifyTextProductNameHPLP3065[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> link text: HP LP3065]<br/>
+verifyDeliveryDate[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> xpath: //div[@class = 'table-responsive']/table/tbody/tr/td[2]/small[1]]<br/>
+Verify TheModelProduct21 Text[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> xpath: //td[contains(text(),'Product 21')]]<br/>
+verifyTheTotalPriceText[[ChromeDriver: chrome on WINDOWS (4c5157848437ba927c49284fa895cf3a)] -> xpath: //div[@class = 'table-responsive']/table/tbody/tr/td[6]]<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>demo.com.tutorialninja.testsuite.DesktopPageTest@1f021e6c</td></tr>
+<tr>
+<td title='demo.com.tutorialninja.testsuite.DesktopPageTest.verifyProductsPriceDisplayHighToLowSuccessfully()'><b>verifyProductsPriceDisplayHighToLowSuccessfully</b><br>Test class: demo.com.tutorialninja.testsuite.DesktopPageTest<br/>
+<a href="#Output-734897812" onClick='toggleBox("Output-734897812", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-734897812" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-734897812">
+Mouse Hover On Desktop[[ChromeDriver: chrome on WINDOWS (b9bc2af45705131759760524ffa6a0ce)] -> link text: Desktops]<br/>
+click On Show All Desktop[[ChromeDriver: chrome on WINDOWS (b9bc2af45705131759760524ffa6a0ce)] -> link text: Show All Desktops]<br/>
+Sort Name (Z - A) By Position NameZtoA[[ChromeDriver: chrome on WINDOWS (b9bc2af45705131759760524ffa6a0ce)] -> xpath: //select[@id='input-sort']]<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>demo.com.tutorialninja.testsuite.DesktopPageTest@1f021e6c</td></tr>
+<tr>
+<td title='demo.com.tutorialninja.testsuite.TopMenuPageTest.verifyUserShouldNavigateToDesktopsPageSuccessfully()'><b>verifyUserShouldNavigateToDesktopsPageSuccessfully</b><br>Test class: demo.com.tutorialninja.testsuite.TopMenuPageTest<br/>
+<a href="#Output-1225353990" onClick='toggleBox("Output-1225353990", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1225353990" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1225353990">
+ Mousehover and Click on desktop [[ChromeDriver: chrome on WINDOWS (56a0b4cb88f6311888230ed2f801bcc2)] -> link text: Desktops]<br/>
+Select menu [[ChromeDriver: chrome on WINDOWS (56a0b4cb88f6311888230ed2f801bcc2)] -> xpath: //nav[@id='menu']//ul/li[contains(@class, 'open')]/div/child::*]<br/>
+get Text Desktop[[ChromeDriver: chrome on WINDOWS (56a0b4cb88f6311888230ed2f801bcc2)] -> xpath: //h2[contains(text(),'Desktops')]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>demo.com.tutorialninja.testsuite.TopMenuPageTest@6eceb130</td></tr>
+</table><p>
+</body>
+</html>
